@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nova Studio — Creative Agency</title>
+  <meta name="description" content="Nova Studio — modern creative agency template with responsive layout, portfolio, pricing and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Nova Studio home">
+        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#7b61ff"/>
+              <stop offset="1" stop-color="#00d4ff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="44" fill="url(#g)"></circle>
+          <path d="M50 28 L68 72 L32 72 Z" fill="white" opacity="0.92"></path>
+        </svg>
+        <span class="brand-text">Nova Studio</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-list" id="navList">
+          <li><a class="navlink" href="#services">Services</a></li>
+          <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+          <li><a class="navlink" href="#pricing">Pricing</a></li>
+          <li><a class="navlink" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn ghost" id="themeToggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+          <a class="btn primary" href="#contact">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Design & build digital products that delight.</h1>
+          <p class="lead">We’re a small studio helping startups and teams craft beautiful, usable interfaces and fast modern sites.</p>
+          <div class="hero-ctas">
+            <a class="btn primary large" href="#contact">Work with us</a>
+            <a class="btn ghost large" href="#portfolio">See our work</a>
+          </div>
+          <ul class="stats" aria-hidden="true">
+            <li><strong>120+</strong><span>Projects</span></li>
+            <li><strong>95%</strong><span>Client satisfaction</span></li>
+            <li><strong>7yrs</strong><span>Design experience</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <!-- Decorative art: gradient card stack -->
+          <div class="card-stack">
+            <div class="card c1"></div>
+            <div class="card c2"></div>
+            <div class="card c3"></div>
+            <div class="device-mockup">
+              <svg viewBox="0 0 300 200" class="mock-screen" aria-hidden="true">
+                <defs>
+                  <linearGradient id="s1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#ffd6a5"/>
+                    <stop offset="1" stop-color="#ff719a"/>
+                  </linearGradient>
+                </defs>
+                <rect x="12" y="12" width="276" height="176" rx="12" fill="url(#s1)"></rect>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services container reveal" aria-labelledby="servicesTitle">
+      <h2 id="servicesTitle">What we do</h2>
+      <p class="section-sub">Design systems, product interfaces, and marketing websites built for performance.</p>
+
+      <div class="grid cards">
+        <article class="card service">
+          <div class="icon" aria-hidden="true">🎨</div>
+          <h3>UI / UX Design</h3>
+          <p>Research-driven interfaces, user flows, prototypes and design systems to scale your product.</p>
+          <a class="card-link" href="#contact">Talk design →</a>
+        </article>
+
+        <article class="card service">
+          <div class="icon" aria-hidden="true">⚙️</div>
+          <h3>Front-end Dev</h3>
+          <p>Clean, accessible, high-performance HTML/CSS/JS — optimized for speed & SEO.</p>
+          <a class="card-link" href="#contact">Build with us →</a>
+        </article>
+
+        <article class="card service">
+          <div class="icon" aria-hidden="true">🚀</div>
+          <h3>Product Strategy</h3>
+          <p>Product roadmaps, discovery sprints, and prioritization to help you ship what matters.</p>
+          <a class="card-link" href="#contact">Plan a sprint →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio reveal" aria-labelledby="portfolioTitle">
+      <div class="container">
+        <h2 id="portfolioTitle">Selected work</h2>
+        <p class="section-sub">A taste of projects — quick case studies, interfaces and landing pages.</p>
+
+        <div class="gallery" id="gallery">
+          <button class="tile" data-title="Aurora Dashboard" data-desc="Design system + analytics dashboard for a fintech app." data-tags="Design,Dashboard,Fintech" aria-haspopup="dialog">
+            <div class="tile-art" style="background: linear-gradient(135deg,#7b61ff,#00d4ff)"></div>
+            <div class="tile-meta"><h4>Aurora Dashboard</h4><small>Fintech</small></div>
+          </button>
+
+          <button class="tile" data-title="Vela Shop" data-desc="Fast e-commerce landing with optimized conversion flow." data-tags="E-commerce,Conversion">
+            <div class="tile-art" style="background: linear-gradient(135deg,#ff7ab6,#ffd36d)"></div>
+            <div class="tile-meta"><h4>Vela Shop</h4><small>E-commerce</small></div>
+          </button>
+
+          <button class="tile" data-title="Orbit Marketing" data-desc="Marketing site and lead capture for B2B SaaS." data-tags="Marketing,SaaS">
+            <div class="tile-art" style="background: linear-gradient(135deg,#00d4ff,#7b61ff)"></div>
+            <div class="tile-meta"><h4>Orbit Marketing</h4><small>SaaS</small></div>
+          </button>
+
+          <button class="tile" data-title="Pulse Mobile" data-desc="Mobile app UI kit and prototype." data-tags="Mobile,Prototype">
+            <div class="tile-art" style="background: linear-gradient(135deg,#8ef6c2,#7be495)"></div>
+            <div class="tile-meta"><h4>Pulse Mobile</h4><small>Mobile</small></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section pricing container reveal" aria-labelledby="pricingTitle">
+      <h2 id="pricingTitle">Pricing</h2>
+      <p class="section-sub">Simple pricing that scales with your needs.</p>
+
+      <div class="grid pricing-grid">
+        <div class="card price">
+          <h3>Starter</h3>
+          <p class="price-amount">$2,500</p>
+          <p>One-page site or landing. 1 design revision. 2-week delivery.</p>
+          <ul class="features">
+            <li>Responsive pages</li>
+            <li>Contact form</li>
+            <li>Basic SEO</li>
+          </ul>
+          <a class="btn ghost" href="#contact">Choose Starter</a>
+        </div>
+
+        <div class="card price featured">
+          <h3>Growth</h3>
+          <p class="price-amount">$8,500</p>
+          <p>Product landing + CMS, 3 revisions, 4–6 week delivery.</p>
+          <ul class="features">
+            <li>Design system</li>
+            <li>Performance optimizations</li>
+            <li>Analytics setup</li>
+          </ul>
+          <a class="btn primary" href="#contact">Choose Growth</a>
+        </div>
+
+        <div class="card price">
+          <h3>Enterprise</h3>
+          <p class="price-amount">Custom</p>
+          <p>Full product build, dedicated team, SLAs and support.</p>
+          <ul class="features">
+            <li>Discovery sprint</li>
+            <li>Dedicated engineer</li>
+            <li>Ongoing support</li>
+          </ul>
+          <a class="btn ghost" href="#contact">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials container reveal" aria-labelledby="testTitle">
+      <h2 id="testTitle">Clients say</h2>
+      <div class="testimonial-wrap">
+        <button class="test-nav" id="prevTest" aria-label="Previous testimonial">◀</button>
+        <div class="test-view" id="testView" role="region" aria-live="polite">
+          <blockquote class="testimonial">
+            <p>“Nova’s team helped us rethink onboarding — conversions increased 38% within a month.”</p>
+            <footer><strong>— Lina Morales</strong>, Head of Product at Finch</footer>
+          </blockquote>
+        </div>
+        <button class="test-nav" id="nextTest" aria-label="Next testimonial">▶</button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact container reveal" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Start a project</h2>
+      <p class="section-sub">Tell us about your idea — we’ll reply within 48 hours.</p>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="form card" novalidate>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required minlength="2" placeholder="Your name" />
+            <div class="field-error" data-for="name" aria-hidden="true"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" />
+            <div class="field-error" data-for="email" aria-hidden="true"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="budget">Estimated budget</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select</option>
+              <option value="starter">$2k–5k</option>
+              <option value="growth">$5k–15k</option>
+              <option value="enterprise">$15k+</option>
+            </select>
+            <div class="field-error" data-for="budget" aria-hidden="true"></div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe your project"></textarea>
+            <div class="field-error" data-for="message" aria-hidden="true"></div>
+          </div>
+
+          <div class="form-cta">
+            <button class="btn primary" type="submit">Send message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
+        </form>
+
+        <aside class="card contact-info" aria-hidden="false">
+          <h3>Let's talk</h3>
+          <p>Email: <a href="mailto:hello@novastudio.example">hello@novastudio.example</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p>Or tell us a good time and we'll call.</p>
+          <div class="mini-cta"><a class="btn ghost" href="#top">Schedule a call</a></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nova Studio — Built with care.</p>
+      <nav aria-label="Footer">
+        <a href="#top">Back to top</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close project">✕</button>
+      <div class="modal-content">
+        <h3 id="modalTitle">Project title</h3>
+        <p id="modalDesc">Project description...</p>
+        <p id="modalTags" class="tags"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page overlay used for GSAP page transitions -->
+  <div id="pageOverlay" class="page-overlay" aria-hidden="true"></div>
+
+  <!-- GSAP (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- main script -->
+  <script src="script.js"></script>
+</body>
+</html>
