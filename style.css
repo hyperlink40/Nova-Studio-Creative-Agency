@@ -1,8 +1,4 @@
-/* styles.css
-   Modern single-file stylesheet with CSS variables, responsive grid, and subtle animations.
-*/
 
-/* ---------- variables & reset ---------- */
 :root{
   --bg: #0f1724;
   --card: #0b1220;
