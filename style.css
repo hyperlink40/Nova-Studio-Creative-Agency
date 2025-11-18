@@ -220,3 +220,51 @@ input,textarea,select{width:100%;padding:.7rem;border-radius:8px;border:1px soli
   .reveal, .tile, .btn, .card { transition: none !important; animation: none !important; }
   .page-overlay { transition: none !important; transform: none !important; opacity:1 !important; }
 }
+/* ----------- ANIMATION BASE ----------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero card float animation */
+@keyframes float {
+  0% { transform: translateY(0) rotate(var(--r)); }
+  50% { transform: translateY(-8px) rotate(calc(var(--r) + 2deg)); }
+  100% { transform: translateY(0) rotate(var(--r)); }
+}
+.card.c1 { --r: -14deg; animation: float 5s ease-in-out infinite; }
+.card.c2 { --r: -6deg; animation: float 6s ease-in-out infinite 0.4s; }
+.card.c3 { --r: 6deg; animation: float 4.5s ease-in-out infinite 0.2s; }
+
+/* Button micro-interactions */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+/* Portfolio tile hover motion */
+.tile {
+  transform: translateY(0);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.35);
+}
+
+/* Modal animation */
+.modal-panel {
+  transform: scale(0.92);
+  opacity: 0;
+  transition: transform .35s var(--ease), opacity .35s var(--ease);
+}
+.modal[aria-hidden="false"] .modal-panel {
+  transform: scale(1);
+  opacity: 1;
+}
